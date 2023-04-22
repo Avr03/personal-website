@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arvinder Singh</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="assets/profile.jpg" alt="Profile Picture">
+            <h1>Software Developer</h1>
+            <a href="assets/resume.pdf" download>Resume</a>
+            <a href="mailto:asingh1225@myseneca.ca">Contact Me</a>
+        </div>
+    </header>
+    <main>
+        <section class="infographic">
+            <div class="container">
+                <h2>Arvinder Singh</h2>
+                <p>Current Date: April 21, 2023</p>
+                <p>Course: Computer Programming (CPP)</p>
+                <p>Section: NDD</p>
+                <p>Professor: Mark Anthony</p>
+                <p>
+                    I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+No part of this assessment has been copied manually or electronically from any other source
+(including web sites) except for the information supplied by the WEB222 instructors and / or
+made available in this assessment for my use. I also declare that no part of this assignment has
+been distributed to other students.
+                </p>
+            </div>
+        </section>
+        <section class="education">
+            <div class="container">
+                <h2>Education</h2>
+            </p>
+                </p>Swami Vivekanand Public School (Kindergarden to High School)</p>
+                </p>Located in India, Haryana</p>
+                </p>Englih Medium School, Cbse BOard</p>
+                <p>Seneca College, Toronto, Canada</p>
+                <p>Program: Computer Programming(CPP)</p>
+                <p></p>
+            </div>
+        </section>
+        <section class="contact-form" id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form action="https://httpbin.org/post" method="POST" onsubmit="return validateForm(event)">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="city">City:</label>
+                    <input list="cities" id="city" name="city" required>
+                    <datalist id="cities">
+                        Banff
+Brooks
+Calgary
+Edmonton
+Fort McMurray
+Grande Prairie
+Jasper
+Lake Louise
+Lethbridge
+Medicine Hat
+Red Deer
+Saint Albert
+Barkerville
+Burnaby
+Campbell River
+Chilliwack
+Courtenay
+Cranbrook
+Dawson Creek
+Delta
+Esquimalt
+Fort Saint James
+Fort Saint John
+Hope
+Kamloops
+Kelowna
+Kimberley
+Kitimat
+Langley
+Nanaimo
+Nelson
+New Westminster
+North Vancouver
+Oak Bay
+Penticton
+Powell River
+Prince George
+Prince Rupert
+Quesnel
+Revelstoke
+Rossland
+Trail
+Vancouver
+Vernon
+Victoria
+West Vancouver
+White Rock
+Brandon
+Churchill
+Dauphin
+Flin Flon
+Kildonan
+Saint Boniface
+Swan River
+Thompson
+Winnipeg
+York Factory
+Bathurst
+Caraquet
+Dalhousie
+Fredericton
+Miramichi
+Moncton
+Saint John
+Argentia
+Bonavista
+Channel-Port aux Basques
+Corner Brook
+Ferryland
+Gander
+Grand Falls–Windsor
+Happy Valley–Goose Bay
+Harbour Grace
+Labrador City
+Placentia
+Saint Anthony
+St. John’s
+Wabana
+Fort Smith
+Hay River
+Inuvik
+Tuktoyaktuk
+Yellowknife
+Baddeck
+Digby
+Glace Bay
+Halifax
+Liverpool
+Louisbourg
+Lunenburg
+Pictou
+Port Hawkesbury
+Springhill
+Sydney
+Yarmouth
+Iqaluit
+Bancroft
+Barrie
+Belleville
+Brampton
+Brantford
+Brockville
+Burlington
+Cambridge
+Chatham
+Chatham-Kent
+Cornwall
+Elliot Lake
+Etobicoke
+Fort Erie
+Fort Frances
+Gananoque
+Guelph
+Hamilton
+Iroquois Falls
+Kapuskasing
+Kawartha Lakes
+Kenora
+Kingston
+Kirkland Lake
+Kitchener
+Laurentian Hills
+London
+Midland
+Mississauga
+Moose Factory
+Moosonee
+Niagara Falls
+Niagara-on-the-Lake
+North Bay
+North York
+Oakville
+Orillia
+Oshawa
+Ottawa
+Parry Sound
+Perth
+Peterborough
+Picton
+Port Colborne
+Saint Catharines
+Saint Thomas
+Sarnia-Clearwater
+Sault Sainte Marie
+Scarborough
+Simcoe
+Stratford
+Sudbury
+Temiskaming Shores
+Thorold
+Thunder Bay
+Timmins
+Toronto
+Trenton
+Waterloo
+Welland
+West Nipissing
+Windsor
+Woodstock
+York
+Borden
+Cavendish
+Charlottetown
+Souris
+Summerside
+Asbestos
+Baie-Comeau
+Beloeil
+Cap-de-la-Madeleine
+Chambly
+                    </datalist>
+
+                    <label for="postal-code">Postal Code:</label>
+                    <input type="text" id="postal-code" name="postal_code" pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$" required>
+
+                    <label>Reason for contacting:</label>
+                    <input type="radio" id="question" name="reason" value="Question" required>
+                    <label for="question">Question</label>
+                    <input type="radio" id="comment" name="reason" value="Comment">
+                    <label for="comment">Comment</label>
+                    <input type="radio" id="hiring" name="reason" value="Hiring">
+                    <label for="hiring">Hiring</label>
+                    
+                    <div id="hourly-rate-container" style="display:none;">
+                        <label for="hourly-rate">Hourly Rate:</label>
+                        <input type="number" id="hourly-rate" name="hourly_rate" min="0" step="0.01" required>
+                    </div>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    
+                    
+                    <input type="submit" value="Submit">
+                    </form>
+                    </div>
+                    </section>
+                    </main>
+                    <footer>
+                    <div class="container">
+                        <p>&copy; 2023 Arvinder Singh. All rights reserved.</p>
+                    </div>
+                    </footer>
+                    <script src="scripts.js"></script>
+                    </body>
+                    </html>
+                    
